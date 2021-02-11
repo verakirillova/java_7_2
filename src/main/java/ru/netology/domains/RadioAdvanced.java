@@ -31,11 +31,11 @@ public class RadioAdvanced {
     }
 
     public void setCurrentRadio(int currentRadio) {
-        if (currentRadio>this.getMaxRadio()){
+        if (currentRadio > this.getMaxRadio()) {
             this.currentRadio = 0;
             return;
         }
-        if (currentRadio<this.getMinRadio()){
+        if (currentRadio < this.getMinRadio()) {
             this.currentRadio = this.maxRadio;
             return;
         }
@@ -63,28 +63,30 @@ public class RadioAdvanced {
     }
 
     public void setCurrentVolume(int currentVolume) {
-        if (currentVolume>this.getMaxVolume()){
+        if (currentVolume > this.getMaxVolume()) {
             return;
         }
-        if (currentVolume<this.getMinVolume()){
+        if (currentVolume < this.getMinVolume()) {
             return;
         }
         this.currentVolume = currentVolume;
     }
 
-    public void plusVolume () {
-        this.setCurrentVolume(this.getCurrentVolume()+1);
+    public void plusVolume() {
+        this.setCurrentVolume(this.getCurrentVolume() + 1);
 
     }
-    public void minusVolume () {
-        this.setCurrentVolume(this.getCurrentVolume()-1);
+
+    public void minusVolume() {
+        this.setCurrentVolume(this.getCurrentVolume() - 1);
     }
 
-    public void nextRadio () {
-        this.setCurrentRadio(this.getCurrentRadio()+1);
+    public void nextRadio() {
+        this.setCurrentRadio(this.getCurrentRadio() + 1);
 
     }
-    public void prevRadio () {
+
+    public void prevRadio() {
         this.setCurrentRadio(this.getCurrentRadio() - 1);
     }
 

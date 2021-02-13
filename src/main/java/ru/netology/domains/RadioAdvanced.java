@@ -32,11 +32,11 @@ public class RadioAdvanced {
 
     public void setCurrentRadio(int currentRadio) {
         if (currentRadio > this.getMaxRadio()) {
-            this.currentRadio = 0;
+            this.currentRadio = this.getMinRadio();
             return;
         }
         if (currentRadio < this.getMinRadio()) {
-            this.currentRadio = this.maxRadio;
+            this.currentRadio = this.getMaxRadio();
             return;
         }
         this.currentRadio = currentRadio;
